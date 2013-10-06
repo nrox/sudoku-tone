@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <meta name="description" content="Ear training with Sudoku" />
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"/>
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache"/>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache"/>
+    <META HTTP-EQUIV="Expires" CONTENT="0"/>
+    <TITLE>Sudoku Tone</TITLE>
+    <LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon"/>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="style.css"/>
+    <SCRIPT TYPE="text/javascript" SRC="lib/jquery.js"></SCRIPT>
+    <SCRIPT TYPE="text/javascript" SRC="lib/webaudio_tools.js"></SCRIPT>
+    <SCRIPT TYPE="text/javascript" SRC="lib/tone.js"></SCRIPT>
+    <SCRIPT TYPE="text/javascript" SRC="lib/generator.js"></SCRIPT>
+    <SCRIPT TYPE="text/javascript" SRC="sudoku-tone.js"></SCRIPT>
+</HEAD>
+<BODY>
+<H1>Ear training with Sudoku</H1>
+<P>Needs chrome browser.</P>
+<P>Each cell generates a tone uniquely related to a number. Drag the numbers in and out of the cells.</P>
+<P>
+    <BUTTON id="reset" ONCLICK="window.location.reload();">reset</BUTTON>
+    <BUTTON id="replay" ONCLICK="playUX();">replay</BUTTON>
+</P>
+<DIV id="soundStatus">
+
+</DIV>
+</BODY>
+</HTML>
