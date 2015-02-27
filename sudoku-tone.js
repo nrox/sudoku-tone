@@ -154,7 +154,7 @@ function play(cell) {
     if (!cell || !cell.number || !cell.play) {
         return;
     }
-    //try {
+    try {
         var sounds = soundMap[cell.number];
         if (!(sounds instanceof Array)) {
             sounds = [sounds];
@@ -163,9 +163,9 @@ function play(cell) {
             startTone(soundFrequency[n]);
         });
         setTimeout(stopTone, 75);
-    //} catch (e) {
-    //    throw e;
-    //}
+    } catch (e) {
+        console.warn(e);
+    }
 }
 
 function overObject(e) {
